@@ -1,2 +1,21 @@
 archivo-local/
 ~$*
+
+# Configuración local, credenciales y cachés: nunca publicar.
+**/.pbi/
+*.abf
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.db
+*.sqlite
+*.sqlite3
+*.log
+respaldo*/
+
+# Los modelos binarios necesitan una revisión específica antes de incluirlos.
+*.pbix
+*.pbit

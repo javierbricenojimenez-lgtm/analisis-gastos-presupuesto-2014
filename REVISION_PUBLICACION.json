@@ -1,0 +1,52 @@
+{
+  "fecha": "2026-10-26",
+  "estado": "validado_para_publicacion",
+  "archivos_propuestos": [
+    {
+      "ruta": ".gitignore",
+      "bytes": 279,
+      "sha256": "8c20ab58f133453de4d9ef06baa084b32dcb8b909abb1860b43de88dced9e17c"
+    },
+    {
+      "ruta": "README.md",
+      "bytes": 6600,
+      "sha256": "9a5f8aa429d9b1199b9802d1038226dbea759d6dff8497b200c8dfe4856c9c6a"
+    },
+    {
+      "ruta": "COMPARTIR_CON_SEGURIDAD.md",
+      "bytes": 3389,
+      "sha256": "699305fd489ec169024f5e059296bd21d5467811e732e7f680619c634a104e5a"
+    },
+    {
+      "ruta": "powerbi/medidas.dax",
+      "bytes": 641,
+      "sha256": "89b820573eb5e94524b33df33397a8e3b816d5bf4644db2c51aff2acf399a6b2"
+    },
+    {
+      "ruta": "powerbi/Dashboard_2014.pdf",
+      "bytes": 148587,
+      "sha256": "81f153197b717316d504fdb9d42e8abee9b28e7df0a7c7f42da7ecd3f912ff94"
+    },
+    {
+      "ruta": "imagenes/dashboard-powerbi.png",
+      "bytes": 238659,
+      "sha256": "0bce198bdbdbe072ae4fadf493fc47872178ff1ef0d9a2a8b68f4f6489b60998"
+    }
+  ],
+  "excluidos": [
+    "PBIX",
+    "PBIT",
+    "PBIP completo",
+    "SemanticModel",
+    "caches .pbi",
+    "imagenes/hallazgos.png no revisada en esta entrega"
+  ],
+  "comprobaciones": [
+    "PDF revisado visualmente y sin adjuntos",
+    "Totales y signos comprobados en PDF",
+    "Modelo TMDL sin cambios de medidas ni relaciones",
+    "Sin patrones de tokens o claves privadas en texto propuesto"
+  ],
+  "limite": "No es garantía absoluta; no se auditaron registro por registro los caches binarios.",
+  "hashes_sobre": "contenido normalizado de los archivos incluidos en Git"
+}

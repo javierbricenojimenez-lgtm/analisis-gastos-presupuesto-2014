@@ -1,0 +1,22 @@
+// Medidas creadas en el ejercicio. Los datos y el modelo de origen son de Microsoft/obviEnce.
+// No se usa la medida heredada Amount, que aplica TOTALYTD y un factor 0,3.
+
+Gasto real =
+CALCULATE(
+    SUM('Fact'[Value]),
+    'Scenario'[Scenario] = "Actual"
+)
+
+Presupuesto =
+CALCULATE(
+    SUM('Fact'[Value]),
+    'Scenario'[Scenario] = "Plan"
+)
+
+Desviacion = [Gasto real] - [Presupuesto]
+
+Desviacion % = DIVIDE([Desviacion], [Presupuesto])
+
+// Contexto de la página: 'Date'[Year] = 2014.
+// Desviación positiva: mayor gasto que presupuesto, cuando Plan es positivo.
+// Presupuestos negativos y vacíos requieren interpretación adicional.

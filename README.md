@@ -1,6 +1,18 @@
 # Análisis de gastos vs. presupuesto — 2014
 
-Proyecto de aprendizaje de Javier Briceño Jiménez para comparar gasto real y presupuesto en Excel, identificar desviaciones y documentar hallazgos.
+Proyecto de aprendizaje de Javier Briceño Jiménez para comparar gasto real y presupuesto en Excel y Power BI, identificar desviaciones y documentar hallazgos.
+
+## Dashboard de Power BI
+
+![Dashboard de control presupuestario 2014](imagenes/dashboard-powerbi.png)
+
+Fuente: Microsoft/obviEnce, IT Spend Analysis. obviEnce ©. Datos de muestra anonimizados; no son datos laborales del autor.
+
+El informe presenta cuatro indicadores, comparación por área, evolución mensual, tabla de detalle y segmentación por área. La paleta distingue gasto real en turquesa y presupuesto en gris azulado. El resumen del pie corresponde al total anual y es un texto fijo que no cambia con la selección.
+
+[Ver o descargar el dashboard en PDF](powerbi/Dashboard_2014.pdf) · [Medidas DAX del ejercicio](powerbi/medidas.dax) · [Revisión y criterios para compartir](COMPARTIR_CON_SEGURIDAD.md).
+
+El archivo editable de Power BI se conserva localmente en esta entrega. La descarga del modelo no forma parte de esta actualización: contiene consultas heredadas con una ruta local que no permiten garantizar su actualización en otro equipo.
 
 ## Objetivo
 
@@ -10,7 +22,7 @@ Responder qué áreas y períodos concentran las diferencias entre gasto real y 
 
 Sobre el modelo de datos de muestra de Microsoft/obviEnce, construí las tablas dinámicas por área y período, las fórmulas de desviación, el formato condicional, los gráficos y la hoja de hallazgos. Exploré las relaciones existentes en Power Pivot e investigué presupuestos vacíos y saldos negativos.
 
-El modelo y los datos originales fueron proporcionados por la fuente. El ejercicio se realizó con orientación de IA; la construcción del análisis en Excel fue realizada por mí. Esta versión no incluye desarrollo propio en SQL ni preparación de datos mediante Power Query.
+El modelo y los datos originales fueron proporcionados por la fuente. El ejercicio se realizó con orientación de IA; la construcción del análisis en Excel fue realizada por mí. Después construí un informe de Power BI con orientación paso a paso, medidas para Actual y Plan, desviaciones y filtros. El refinamiento visual y la preparación del portafolio se realizaron con asistencia de IA. Esta versión no incluye desarrollo propio en SQL ni preparación propia de datos mediante Power Query.
 
 ## Resultados de 2014
 
@@ -64,6 +76,8 @@ Fuente de los datos y modelo: Microsoft/obviEnce. obviEnce ©.
 Se revisaron las fórmulas guardadas de desviación y porcentaje y se conciliaron los totales mensuales y por área. Los resultados almacenados de los gráficos corresponden a las siete áreas y los doce períodos, sin incluir los totales como categoría.
 
 La actualización completa del modelo en Excel está pendiente de verificar. El libro conserva una referencia externa al archivo original, asociada a su hoja Info; las fórmulas de desviación revisadas usan celdas del propio libro. Las causas contables de presupuestos negativos y posibles reclasificaciones no pueden confirmarse sin documentación adicional.
+
+En Power BI se conciliaron los totales generales con Excel y se comprobó el filtro Infrastructure: 255.268.858,10 de gasto, 176.813.253,17 de presupuesto y 44,37 % de desviación. Se conserva el signo de los importes y la evolución mensual se ordena por período ascendente. Los cambios visuales no modifican las medidas, relaciones ni datos del modelo original importado.
 
 ## Fuente y atribución
 
